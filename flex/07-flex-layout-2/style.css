@@ -8,21 +8,64 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  line-height: 72px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  text-align: center;
+  line-height: 72px;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  flex: none;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 250px;
+  height: 250px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+}
+
+.container.flex-one {
+  flex-direction: column;
+}
+
+.container.flex-three {
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
